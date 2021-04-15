@@ -103,3 +103,58 @@ def bar():
     x = (1, 2)
     g(x)
     x == (1, 2) # Will always be True, since no function can change the object (1, 2)
+# Collection Types
+# Lists
+int_list = [1, 2, 3]
+string_list = ['Jared', 'Otieno']
+print(int_list, string_list)
+empty_list = [] # empty list
+mixed_list = [10, 'Mercy', True, 5.75, None]
+print(mixed_list)
+# Accessing the Elements pf a list via an index
+names = ['Alice', 'Bob', 'Craig', 'Diana', 'Eric']
+print(names[0])
+print(names[1])
+print(names[2])
+print(names[3])
+print(names[4])
+print(names[-1])
+print(names[-2])
+print(names[-3])
+print(names[-4])
+print(names[-5])
+# Lists are mutable, you change the values in a list
+names[0] = 'Ann'
+print(names)
+# Adding/removing elements in a list
+names.append("Sia")
+print(names)
+# Add a new element at a specific index
+names.insert(1, "Nikki")
+print(names)
+names.insert(3, "Ayuma")
+print(names)
+names.remove("Bob")
+print(names)
+# Getting the index of an Element in a list
+names.index("Ann")
+print(names.index("Ann"))
+# Count length of lists
+len(names)
+print(len(names))
+# Count occurence of any item in the list
+a = [1, 1, 1, 2, 3, 4]
+a.count(1)
+print(a.count(1))
+# Reverse the list
+a.reverse()
+print(a)
+a[::-1]
+print(a)
+# Remove and return item at index
+names.pop(1)
+print(names.pop(1))
+# You can iterate over the list elements like below
+def my_list():
+    for element in my_list:
+        print(element)
