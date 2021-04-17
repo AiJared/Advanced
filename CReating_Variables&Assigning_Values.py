@@ -177,3 +177,12 @@ ca_capital = state_capitals['California']
 print(ca_capital)
 for k in state_capitals.keys():
     print('{} is the capital of {}'.format(state_capitals[k], k))
+# Set
+first_names = {'Adam', 'Beth', 'Charlie'}
+print(first_names)
+my_list = [1, 2, 3]
+my_set = set(my_list)
+print(my_set)
+# Check Membership of the set using in:
+if name in first_names:
+    print(name)
