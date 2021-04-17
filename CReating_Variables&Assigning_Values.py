@@ -165,3 +165,15 @@ one_member_tuple = ('Only member')
 one_member_tuple = 'Only member'
 one_member_tuple = tuple(['Only member'])
 print(one_member_tuple)
+# Dictionaries
+state_capitals = {
+    'Arkansaa': 'Little Rock',
+     'Colorador': 'Denver',
+     'California': 'Sacramento',
+     'Georgia:': 'Atlanta'
+}
+# To get a value refer to it by key
+ca_capital = state_capitals['California']
+print(ca_capital)
+for k in state_capitals.keys():
+    print('{} is the capital of {}'.format(state_capitals[k], k))
