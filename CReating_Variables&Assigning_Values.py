@@ -167,8 +167,8 @@ one_member_tuple = tuple(['Only member'])
 print(one_member_tuple)
 # Dictionaries
 state_capitals = {
-    'Arkansaa': 'Little Rock',
-     'Colorador': 'Denver',
+    'Arkansas': 'Little Rock',
+     'Colorado': 'Denver',
      'California': 'Sacramento',
      'Georgia:': 'Atlanta'
 }
@@ -186,3 +186,19 @@ print(my_set)
 # Check Membership of the set using in:
 if name in first_names:
     print(name)
+# Defaultdict
+state_capitals = {
+    'Arkansaa': 'Little Rock',
+     'Colorado': 'Denver',
+     'California': 'Sacramento',
+     'Georgia:': 'Atlanta'
+}
+from collections import defaultdict
+state_capitals = defaultdict(lambda: 'Boston')
+state_capitals['Arkansas'] = 'Little Rock'
+state_capitals['California'] = 'Sacramento'
+state_capitals['Colorado'] = 'Denver'
+state_capitals['Georgia'] = 'Atlanta'
+state_capitals['Alabama']
+print(state_capitals['Alabama'])
+print(state_capitals['Arkansas'])
