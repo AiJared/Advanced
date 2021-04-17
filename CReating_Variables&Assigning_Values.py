@@ -158,3 +158,10 @@ print(names.pop(1))
 def my_list():
     for element in my_list:
         print(element)
+# Tuples
+ip_address = ('10.20.30.40', 8080)
+print(ip_address)
+one_member_tuple = ('Only member')
+one_member_tuple = 'Only member'
+one_member_tuple = tuple(['Only member'])
+print(one_member_tuple)
