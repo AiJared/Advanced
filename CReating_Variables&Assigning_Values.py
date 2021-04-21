@@ -212,3 +212,17 @@ float(x) / 2
 import math
 math.sqrt(16)
 print(math.sqrt(16))
+# Creating a Module
+def say_hello():
+    print("Hello!")
+import hello
+hello.say_hello()
+from hello import say_hello
+say_hello()
+# Modules can be aliased
+import hello as ai
+ai.say_hello()
+# A module can be stand alone runnable srcipt
+if __name__ == '__main__':
+    from hello import say_hello
+    say_hello()
