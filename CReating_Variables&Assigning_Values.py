@@ -207,3 +207,4 @@ print(state_capitals['Arkansas'])
 name = input("What is your name?")
 print(name)
 x = input("Write a number:")
+float(x) / 2
