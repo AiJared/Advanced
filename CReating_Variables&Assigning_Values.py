@@ -202,3 +202,8 @@ state_capitals['Georgia'] = 'Atlanta'
 state_capitals['Alabama']
 print(state_capitals['Alabama'])
 print(state_capitals['Arkansas'])
+# User Input
+# Interactive Input
+name = input("What is your name?")
+print(name)
+x = input("Write a number:")
