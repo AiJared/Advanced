@@ -13,7 +13,7 @@ x = None
 print(type(x))
 a, b, c = 1, 2, 3
 print(a, b, c)
-a = b = c = 1 # All three objects refer to one int object 1
+a = b = c = 1  # All three objects refer to one int object 1
 print(a, b, c)
 b = 2          # b now refers to another int object, one with a value 1
 print(a, b, c)
@@ -26,7 +26,7 @@ x[0] = 13           # we are updating the value of the list [7, 8, 9] through on
 print(y)            # printing the value of the list using its other name
 print(x)
 # Nested Lists are also valid. This means that a list can also contain another list as an element
-x = [1, 2, [3, 4, 5], 6, 7] # this is a nested list
+x = [1, 2, [3, 4, 5], 6, 7]  # this is a nested list
 print(x[2])
 print(x[2][1])
 # You can assign a new value to a variable using (=)
