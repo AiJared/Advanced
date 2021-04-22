@@ -23,3 +23,12 @@ b = frozenset('asdfagsa')
 print(b)
 cities = frozenset(["Frankfurt", "Basel", "Freiburg"])
 print(cities)
+# Numbers Data type
+int_num = 10 # int value
+float_num = 10.2  # float value
+complex_num = 3.14j  # complex value
+long_num = 1234567  # Long value
+print(int_num)
+print(float_num)
+print(complex_num)
+print(long_num)
