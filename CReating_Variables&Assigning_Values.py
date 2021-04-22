@@ -226,3 +226,31 @@ ai.say_hello()
 if __name__ == '__main__':
     from hello import say_hello
     say_hello()
+# The String Function - str() and repr()
+s = """w'o"w"""
+repr(s)
+str(s)
+eval(repr(s)) == s
+import datetime
+today = datetime.datetime.now()
+str(today)
+repr(today)
+class Represent(object):
+
+    def __init__(self, x, y):
+        self.x, self.y = x, y
+
+    def __repr__(self):
+        return "Represent(x={},y=\"{}\")". format(self.x, self.y)
+
+    def __str__(self):
+        return "Representing x as {} and y as {}". format(self.x, self.y)
+# Using the above class we can see the results:
+r = Represent(1, "Hooper")
+print(r) # prints __str__
+print(r.__repr__) # prints __repr__
+rep = r.__repr__() # Sets the execution of __repr__ to a new variable
+print(rep) # prints 'Represent(x=1, y="Hooper")'
+r2 = eval(rep) # evaluates rep
+print(r2) # prints __str__ from new object
+print(r2 == r) # prints false because they are different objects
