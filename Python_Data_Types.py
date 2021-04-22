@@ -32,3 +32,16 @@ print(int_num)
 print(float_num)
 print(complex_num)
 print(long_num)
+# List Data Types
+list = [123, 'abcd', 10.2, 'd']  #can be an array of any data type or single dta type
+list1 = ['Hello', 'world']
+print(list)  # will output the whole list
+print(list[0:2])  # will output first two elements of the list
+print(list1 * 2)  # will give list1 two times
+print(list + list1)  # will give concatenation of both lists
+# Dictionary Data Types
+dic={'name': 'red', 'age': 10}
+print(dic)  # will output the key-value pairs
+print(dic['name'])  # will output only value with 'name' key
+print(dic.values())  # will output the list of values in dic
+print(dic.keys())  # will output the list keys
