@@ -45,3 +45,9 @@ print(dic)  # will output the key-value pairs
 print(dic['name'])  # will output only value with 'name' key
 print(dic.values())  # will output the list of values in dic
 print(dic.keys())  # will output the list keys
+# Tuple Data Type
+tuple = (123, 'hello')
+tuple1 = ('world')
+print(tuple)  # will output the whole tuple
+print(tuple[0])  # will output the first value in the tuple
+print(tuple + tuple1)  # will output a concatenation of both
