@@ -24,3 +24,20 @@ dt_pdt = datetime(2021, 7, 1, 12, tzinfo=PT) #  DST is handled automatically
 print(dt_l)
 print(dt_pst)
 print(dt_pdt)
+#  Computing Time Differences
+from datetime import datetime, timedelta
+now = datetime.now()
+then = datetime(2016, 5, 23)
+delta = now - then
+print(delta.days)
+print(delta.seconds)
+#  n days after date
+def get_n_days_after_date(date_format = "%d %B %Y", add_days = 120):
+
+    date_n_days_after = datetime.datetime.now() + timedelta(days = add_days)
+    return date_n_days_after.strftime(date_format)
+# n days before date
+def get_n_days_before_date(date_format = "%d %B %Y", add_days = 120):
+
+    date_n_days_before = datetime.datetime.now() + timedelta(days = add_days)
+    return date_n_days_before.strftime(date_format)
