@@ -41,3 +41,24 @@ def get_n_days_before_date(date_format = "%d %B %Y", add_days = 120):
 
     date_n_days_before = datetime.datetime.now() + timedelta(days = add_days)
     return date_n_days_before.strftime(date_format)
+
+#  Basic Datetime Usage
+# Date Object
+import datetime
+today = datetime.date.today()
+new_year = datetime.date(2021, 1, 1)
+
+# Time Object
+noon = datetime.time(12, 0, 0)
+
+# Current datetime
+now = datetime.datetime.now()
+
+# Datetime Object
+millenium_turn = datetime.datetime(2000, 1, 1, 0, 0, 0)
+
+# Subtracrion of noon from today
+print('Time since the millenium at midnight:',
+      datetime.datetime(today.year, today.month, today.day) - millenium_turn)
+print('Since the millenium at noon:',
+      datetime.datetime.comine(today, noon) - millenium_turn)
