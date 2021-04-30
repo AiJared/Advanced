@@ -62,3 +62,16 @@ print('Time since the millenium at midnight:',
       datetime.datetime(today.year, today.month, today.day) - millenium_turn)
 print('Since the millenium at noon:',
       datetime.datetime.comine(today, noon) - millenium_turn)
+
+# Switching Between timezones
+from datetime import datetime
+from dateutil import tz
+
+utc = tz.tzutc()
+local = tz.tzlocal()
+
+utc_now = utc_now.replace(tzinfo=utc)
+utc_now #  Timezone-ware
+
+local_now = utc_now.astimezome(local)
+local_now #  Converted to lacal time
