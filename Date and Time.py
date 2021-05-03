@@ -85,3 +85,44 @@ print('Yesterday:', yesterday)
 tomorrow = today + datetime.timedelta(days=1)
 print('Tomorrow:', tomorrow)
 print('Time between tomorrow and yesterday:', tomorrow - yesterday)
+
+#  Converting Timestamp to datetime
+import time
+from datetime import datetime
+seconds_since_epoch=time.time()
+
+utc_date=datetime.utcfromtimestamp(seconds_since_epoch)
+
+# Separating months from a date accurately
+import calendar
+from datetime import date
+
+def mothdelta(date, delta):
+    m, y = (date.month + delta) % 12, date.year + ((date.month) + delta -1) // 12
+    if not m: m = 12
+    d = min(date.day, calendar.monthrange(y, m) [1])
+    return date.replace(day=d, month=m, year=y)
+
+next_month = monthdelta(date.today(), 1)
+
+# Using dateutils module
+
+import datetime
+import dateutil.relativedelta
+d = datetime.datetime.strptime("2013-03-31", "%Y-%m-%d")
+d2 = dateutil.relativedelta.relativedelta(months=1)
+
+# Parsing an arbitrary ISO 8601 timestamp with minimal libraries
+
+str(datetime.datetime(2016, 7, 22, 25, 59, 555555))
+# but if fraction is 0 not fractional part is output
+str(datetime.datetime(2016, 7, 22, 9, 25, 55, 0))
+
+import iso8601
+iso8601.parse_date('2016-07-22 09:25:59')
+iso8601.parse_date('2016-07-22 09:25:59+03:00')
+iso8601.parse_date('2016-07-22 09:25:59Z')
+iso8601.parse_date('2016-07-22T09:25:59.000111+03:00')
+
+iso8601.parse_date('2016-07-22 09:25:59', default_timezone=None)
+iso8601.parse_date('2016-07-22 09:25:59Z', default_timezone=None)
