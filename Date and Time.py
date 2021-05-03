@@ -126,3 +126,60 @@ iso8601.parse_date('2016-07-22T09:25:59.000111+03:00')
 
 iso8601.parse_date('2016-07-22 09:25:59', default_timezone=None)
 iso8601.parse_date('2016-07-22 09:25:59Z', default_timezone=None)
+
+#  Get an ISO 8601 Timestamp
+#  Without timezone, with microseconds
+from datetime import datetime
+
+datetime.now().isoformat()
+
+#  With timezone, with microsecnds
+from datetime import datetime
+from dateutil.tz import tzlocal
+
+datetime.now(tzlocal()).isoformat()
+
+#  With timezone, without microseconds
+from datetime import datetime
+from dateutil.tz import tzlocal
+
+datetime.now(tzlocal()).replace(microsecnds=0).isoformat()
+
+# Parsing a string with a shirt timezone name into a timezone aware datetime object
+from dateutil import tz
+from dateutil.parser import parse
+
+ET = tz.gettz('US/Eastern')
+CT = tz.gettz('US/Central')
+MT = tz.gettz('US/Mountain')
+PT = tz.gettz('US/Pacific')
+
+us_tzinfos = {'CST': CT, 'CDT': CT,
+             'EST': ET, 'EDT': ET,
+             'MST': MT, 'MDT': MT,
+             'PST': PT, 'PDT': PT}
+
+dt_est = parse('2014-01-02 04:00:00 EST', tzinfos=us_tzinfos)
+dt_pst = parse('2016-03-11 16:00:00 PST', tzinfos=us_tzinfos)
+dt_est
+dt_pst
+
+dt_fixed = dt.tzinfo.localize(dt.replace(tzinfo=None))
+dt_fixed.tzinfo
+
+# Fuzzy datetime parsing(extracting datetime out of a text)
+from dateutil.parser import parse
+
+dt = parse("Today is January 1, 2047 at 8:21:00AM", fuzzy=True)
+print(dt)
+
+# Iterate over dates
+import datetime
+# The size of each steps in days
+day_delta = datetime.timedelta(days=1)
+
+start_date = datetime.date.today()
+end_date = start_date + 7*day_delta
+
+for i in range((end_date - start_date).days):
+    print(start_date + i*day_delta)
