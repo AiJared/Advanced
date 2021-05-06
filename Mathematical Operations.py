@@ -72,3 +72,15 @@ math.expm1(0)
 
 math.exp(1e-6) - 1
 math.expm1(1e-6)
+
+# Trigonometric Functions
+a, b = 1, 2
+import math
+math.sin(a)
+math.cosh(b)
+math.atan(math.pi)
+math.hypot(a, b)
+#  Calculating Euclidian Distance between two points using math.hypot()
+math.hypot(x2-x1, y2-y1)
+math.degree(a)
+math.radians(57.29577951308232)
