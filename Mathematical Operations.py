@@ -90,3 +90,17 @@ a = a + 1
 a = a * 2
 a += 1
 a *= 2
+
+#  Subtraction
+a, b = 1, 2
+b - a
+import operator
+operator.sub(b, a)
+
+# Multiplication
+a, b = 2, 3
+a * b
+import operator
+operator.mul(a, b)
+3 * 'ab'
+3 * ('a', 'b')
