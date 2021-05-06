@@ -84,3 +84,9 @@ math.hypot(a, b)
 math.hypot(x2-x1, y2-y1)
 math.degree(a)
 math.radians(57.29577951308232)
+
+#  Inplace Operations
+a = a + 1
+a = a * 2
+a += 1
+a *= 2
