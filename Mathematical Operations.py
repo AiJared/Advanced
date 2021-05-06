@@ -104,3 +104,21 @@ import operator
 operator.mul(a, b)
 3 * 'ab'
 3 * ('a', 'b')
+
+#  Logarithms
+import math
+import cmath
+
+math.log(5)
+math.log(5, math.e)
+cmath.log(5)
+math.log(1000, 10)
+cmath.log(1000, 10)
+#  Special variations of the math.log function exist for different bases
+# Logarithm base e - 1 (higher precision for low values)
+math.log1p(5)
+# Logarithm base 2
+math.log2(8)
+# Logarithm base 10
+math.log10(100)
+cmath.log10(100)
