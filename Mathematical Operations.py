@@ -122,3 +122,19 @@ math.log2(8)
 # Logarithm base 10
 math.log10(100)
 cmath.log10(100)
+
+#  Modulus
+3 % 4
+10 % 2
+6 % 4
+
+import operator
+operator.mod(3, 4)
+operator.mod(10, 2)
+operator.mod(6, 4)
+# You can also use Negative numbers
+-9 * 7
+9 * -7
+-9 * -7
+
+quotient, remainder = divmod(9, 4)
