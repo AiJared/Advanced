@@ -106,3 +106,11 @@ import operator # the operator module provides 2-argument arithmetic functions
 operator.truediv(a, b)
 operator.floordiv(a, b)
 operator.floordiv(a, c)
+
+#  Addition
+a, b = 1, 2
+a + b
+a +=b
+import operator
+operator.add(a, b)
+a = operator.iadd(a, b)
