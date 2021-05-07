@@ -45,3 +45,20 @@ def foo():
     if True:
      a = 5
      print(a)
+
+#  The del command
+x = 5
+print(x) # out: 5
+del x
+class A:
+    pass
+a = A()
+a.x = 7
+print(a.x) # out: 7
+del a.x
+x = {'a': 1, 'b': 2}
+del x['a']
+print(x)
+x = [0, 1, 2, 3, 4]
+del x[1:3]
+print(x) 
