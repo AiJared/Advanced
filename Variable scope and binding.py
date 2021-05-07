@@ -35,3 +35,13 @@ def change_global_x():
     print(x)
 change_global_x() # prints Bye
 print(x)
+
+#  Local Variables
+def foo():
+    a = 5
+    print(a)
+
+def foo():
+    if True:
+     a = 5
+     print(a)
