@@ -145,8 +145,8 @@ def f4():
     print('bar' in globals()) # False
 #  Global vs nonlocal
 def f1():
-    foo = 1 # a new foo local in f1
-   def f2():
+    foo = 1
+    def f2():
        foo = 2 # a new foo local in f2
        def f3():
            foo = 3 # a new foo local in f3
@@ -156,6 +156,7 @@ def f1():
            global foo
            print(foo) # 0
            foo = 100 # modifies global foo
+
 def f1():
 
     def f2():
@@ -165,3 +166,7 @@ def f1():
             nonlocal foo # foo from f2, which is the nearest enclosing scope
             print(foo) # 2
             foo = 20
+#  Binding Occurrence
+x = 5
+x += 7
+for x in iterable: pass
