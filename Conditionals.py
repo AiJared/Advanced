@@ -63,3 +63,18 @@ if False:
     print("This won't be printed...")
 else:
     print("It is false!")
+#  Testing if an object is None and assigning it
+if aDate is None:
+    aDate=datetime.date.today()
+if not aDate:
+    aDate.datetime.date.today()
+
+aDate=aDate or datetime.date.today()
+
+#  If statement
+if True:
+    print("It is true!")
+if False:
+    print("This won't be printed")
+if 2 + 2 == 4:
+    print("I know math.")
