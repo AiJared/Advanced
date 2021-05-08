@@ -52,3 +52,14 @@ if a in (3, 4, 6):
     print('yes')
 else:
     print('no')
+
+#  Else statement
+if True:
+    print("It is true!")
+else:
+    print("This won't be printed...")
+
+if False:
+    print("This won't be printed...")
+else:
+    print("It is false!")
