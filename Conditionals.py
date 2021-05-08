@@ -26,3 +26,29 @@ else:
 1 or 2
 None or 1
 0 or []
+
+#  Lazy evaluation
+def print_me():
+    print('I am here!')
+0 and print_me()
+
+#  Testing for multiple conditions
+#  Each variable need to compared separately
+a = 1
+b = 6
+if a > 2 and b > 2:
+    print('yes')
+else:
+    print('no')
+#  Checking if a variable is one of the multiple values
+#  Each comparison must be made separately
+a = 1
+if a == 3 or a == 4 or a == 6:
+    print('yes')
+else:
+    print('no')
+#  Using the operator is the canonical way to write this
+if a in (3, 4, 6):
+    print('yes')
+else:
+    print('no')
