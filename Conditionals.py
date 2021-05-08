@@ -14,3 +14,15 @@ elif number < 2:
     print("Number is smaller than 2.")
 else:
     print("Number is 2.")
+
+#  Boolean Logic Expressions
+#  And operator
+1 and 2
+1 and 0
+1 and "Hello World"
+"" and "pancakes"
+
+# Or operator
+1 or 2
+None or 1
+0 or []
