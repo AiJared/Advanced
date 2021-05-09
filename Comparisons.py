@@ -41,3 +41,11 @@ def myfunc(var=sentinel):
     else:
         #  Value was provided
         pass
+#  Greater than or less than
+12 > 4
+1 < 4
+#  Strings compare lexicographically(alphabetical order)
+"alpha" < "beta" #  True
+"gamma" > 'beta' #  True
+"gamma" < "OMEGA" #  False
+"GAMMA" < "OMEGA" #  True
