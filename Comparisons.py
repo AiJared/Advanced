@@ -53,3 +53,19 @@ def myfunc(var=sentinel):
 12 != 1 #  True
 12 != '12' #  True
 '12' != '12' #  False
+12 == 12 #  True
+12 == 1 #  False
+'12' == '12' #  True
+'spam' == 'spam' #  True
+'12' == 12 #  False
+#  Comparing objects
+class foo(object):
+    def __init__(self, item):
+        self.my_item = item
+    def __eq__(self, other):
+        return self.my_item == other.my_item
+a = foo(5)
+b = foo(5)
+a == b #  True
+a != b #  False
+a is b #  False
