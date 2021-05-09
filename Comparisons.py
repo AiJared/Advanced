@@ -49,3 +49,7 @@ def myfunc(var=sentinel):
 "gamma" > 'beta' #  True
 "gamma" < "OMEGA" #  False
 "GAMMA" < "OMEGA" #  True
+#  Not equal to
+12 != 1 #  True
+12 != '12' #  True
+'12' != '12' #  False
