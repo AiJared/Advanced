@@ -36,3 +36,19 @@ def break_all():
             if i*j == 6:
                 return(i)
             print(i*j)
+#  For loops
+for i in (0, 1, 2, 3, 4):
+    print(i)
+for i in range(1, 5):
+    print(i)
+#  Iterating Over lists
+for x in ['one', 'two', 'three', 'four']:
+    print(x)
+for x in range(1, 6):
+    print(x)
+#  Enumerate Function
+for index, item in enumerate(['one', 'two', 'three', 'four']):
+    print(index, '::', item)
+#  Iterate over lists value manipulation using map and lambda
+x = map(lambda e : e.upper(), ['one', 'two', 'three', 'four'])
+print(x)
