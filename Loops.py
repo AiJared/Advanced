@@ -78,3 +78,8 @@ for i in a:
         break
     else:
         print('no exception')
+#  The pass statement
+for x in range(10):
+    pass
+while x == y:
+    pass
