@@ -91,3 +91,25 @@ for value in d.values():
     print(value)
 for key, value in d.items():
     print(key, "::", value)
+#  The 'half loop" do-while
+a = 10
+while True:
+    a = a-1
+    print(a)
+    if a<7:
+       break
+print('Done.')
+#  Iterating different portion of a list with different step size
+#  Iteration over the whole list
+lst = ['alpha', 'bravo', 'charlie', 'delta', 'echo']
+for s in lst:
+    print (s[:1])
+for idx, s in enumerate(lst):
+    print("%s has an index of %d" % (s, idx))
+#  Iterate Over sub-list
+for i in range(2,4):
+    print("lst at %d contains %s" % (i, lst[i]))
+for s in lst[1::2]:
+    print(s)
+for i in range(1, len(lst), 2):
+    print(lst[i])
