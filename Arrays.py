@@ -34,3 +34,10 @@ print(my_array)
 #  Get an array buffer information using buffer_info() method
 my_array.buffer_info()
 print(my_array.buffer_info())
+#  Check for number of occurrences of an element using count() method
+my_array = array('i', [1, 2, 2, 3, 3,  4, 5])
+print(my_array.count(3))
+#  Covert array to strings using tostring() method
+from array import *
+my_char_array = array('c', ['g', 'e', 'e', 'k'])
+print(my_char_array.tostring())
