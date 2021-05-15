@@ -28,3 +28,9 @@ print(my_array)
 #  Fetch any element through its index using index() method
 print(my_array.index(5))
 print(my_array.index(3))
+#  Reverse a python array using reverse() method
+my_array.reverse()
+print(my_array)
+#  Get an array buffer information using buffer_info() method
+my_array.buffer_info()
+print(my_array.buffer_info())
