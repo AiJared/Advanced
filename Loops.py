@@ -113,3 +113,13 @@ for s in lst[1::2]:
     print(s)
 for i in range(1, len(lst), 2):
     print(lst[i])
+#  While Loop
+i = 0
+while i < 4:
+#loop statements
+      i = i + 1
+import cmath
+
+complex_num = cmath.sqrt(-1)
+while complex_num:
+    print(complex_num)
